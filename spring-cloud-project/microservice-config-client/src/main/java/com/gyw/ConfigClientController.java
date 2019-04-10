@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class ConfigClientController {
-    @Value("{profile}")
+    @Value("${spring.cloud.config.profile}")
     private String profile;
 
     @GetMapping("/profile")
