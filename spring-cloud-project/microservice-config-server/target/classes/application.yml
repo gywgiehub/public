@@ -1,0 +1,21 @@
+server:
+  port: 8980
+spring:
+  profiles:
+    active: dev
+  application:
+    name: microservice-config-server
+  cloud:
+    config:
+      server:
+        git:
+          #配置Git仓库地址
+          uri: https://github.com/gywgiehub/gyw.github.io.git
+          #配置文件在仓库中位置
+          search-paths: gitTest/spring-cloud-config-repo
+          #Git仓库的账号
+          username: gywgiehub
+          #Git仓库的密码
+          password: q78361900
+          #仓库分支
+          default-label: master

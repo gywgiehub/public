@@ -9,3 +9,8 @@ spring:
       profile: dev
       #指定Git仓库的分支
       label: master
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

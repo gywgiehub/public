@@ -1,2 +1,5 @@
 server:
   port: 8081
+info:
+  app:
+    name: microservice-config-client
