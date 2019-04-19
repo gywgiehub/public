@@ -12,10 +12,27 @@ spring:
           #配置Git仓库地址
           uri: https://github.com/gywgiehub/gyw.github.io.git
           #配置文件在仓库中位置
-          search-paths: gitTest/spring-cloud-config-repo
+          search-paths: spring-cloud-config-repo
           #Git仓库的账号
           username: gywgiehub
           #Git仓库的密码
           password: q78361900
           #仓库分支
           default-label: master
+  #mysql数据库链接
+  datasource:
+    hikari:
+      driver-class-name: com.mysql.jdbc.Driver
+      jdbc-url: mysql://127.0.0.1:3306/tf_${spring.application.name}?useUnicode=true&characterEncoding=utf-8&useSSL=false&autoReconnect=true
+      username: root
+      password: colorful
+  #安全验证用户名和密码
+  #security:
+    #user:
+      #name: user               #配置登录的账号是user
+      #password: 123   #配置登录的密码是password123
+eureka:
+  client:
+    service-url:
+      #设置与Eureka Server交互的地址
+      defaultZone: http://localhost:8761/eureka/
