@@ -10,13 +10,13 @@
         stage('Build') {
             steps {
                 echo 'Building'
-                sh 'mvn clean install' #可以用自己的 mvn clean deploy + 参数替代
+                sh 'mvn clean install'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing'
-                sh 'mvn clean verify sonar:sonar' #此处可以使用mvn test替代，笔者这步是检测代码的质量同步到自己的代码质量检测平台。
+                sh 'mvn clean verify sonar:sonar'
             }
         }
         stage('Deploy') {
