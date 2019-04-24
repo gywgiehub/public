@@ -26,11 +26,6 @@ spring:
       jdbc-url: mysql://127.0.0.1:3306/tf_${spring.application.name}?useUnicode=true&characterEncoding=utf-8&useSSL=false&autoReconnect=true
       username: root
       password: colorful
-  #安全验证用户名和密码
-  #security:
-    #user:
-      #name: user               #配置登录的账号是user
-      #password: 123   #配置登录的密码是password123
 eureka:
   client:
     service-url:
