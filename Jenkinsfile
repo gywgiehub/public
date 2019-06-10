@@ -22,7 +22,7 @@
         stage('Deploy') {
             steps {
                 echo 'Deploying'
-                sh 'mvn clean deploy'  # 此处调用脚本或者ansible、saltstak，部署到远程
+                sh 'mvn clean deploy'
             }
         }
     }
